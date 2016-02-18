@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabView", "LabView\LabView.csproj", "{6095C2E3-B5FE-41A5-93D8-761B688A1997}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc2000", "Calc2000\Calc2000.csproj", "{CA7CC943-3801-43AF-855D-D615920D0DB4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6095C2E3-B5FE-41A5-93D8-761B688A1997} = {6095C2E3-B5FE-41A5-93D8-761B688A1997}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

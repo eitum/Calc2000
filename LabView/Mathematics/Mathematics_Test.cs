@@ -3,9 +3,9 @@
 namespace ME_LabView
 {
   [TestClass]
-  public class Math_test
+  public class Mathematics_test
   {
-    private Math TestClass = new Math();
+    private Mathematics TestClass = new Mathematics();
     private byte a;
     private byte b;
 
