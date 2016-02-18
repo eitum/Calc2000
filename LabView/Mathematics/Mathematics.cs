@@ -4,9 +4,11 @@
   {
     public Status ResultStatus;
 
+    #region Add-Function
+
     public byte Add(byte a, byte b)
     {
-      if(a+b > byte.MaxValue)
+      if ((byte.MaxValue - a) < b)
       {
         ResultStatus = Status.overflow;
         return 0;
@@ -20,7 +22,7 @@
 
     public ushort Add(ushort a, ushort b)
     {
-      if (a + b > ushort.MaxValue)
+      if ((ushort.MaxValue - a) < b)
       {
         ResultStatus = Status.overflow;
         return 0;
@@ -34,7 +36,7 @@
 
     public uint Add(uint a, uint b)
     {
-      if (a + b > uint.MaxValue)
+      if ((uint.MaxValue - a)< b)
       {
         ResultStatus = Status.overflow;
         return 0;
@@ -48,7 +50,7 @@
 
     public ulong Add(ulong a, ulong b)
     {
-      if (a + b > ulong.MaxValue)
+      if ((ulong.MaxValue - a) < b)
       {
         ResultStatus = Status.overflow;
         return 0;
@@ -87,5 +89,7 @@
         return (double)(a + b);
       }
     }
+
+    #endregion
   }
 }
